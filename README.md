@@ -1,4 +1,4 @@
-# How to Make Bootable Storage for OS Installation
+# How to Make Bootable Storage for OS Installation with Bypass Feature
 
 *before we start make sure you have stable internet connection*
 
@@ -10,4 +10,17 @@ Requirements:
 **Step 2:** Insert the flash drive to your PC/Laptop <br><br>
 **Step 3:** Open rufus.exe <br><br>
 **Step 4:** Click "SELECT" and Load the ISO File. <br><br>
-**Step 5:** 
+
+**Partition scheme & Target System:**<br>
+**MBR** for legacy BIOS <br>
+**GPT** for UEFI systems <br>
+**Target system** will auto-adjust, but you can change it based on your system.<br><br>
+**File System & Cluster Size:**<br>
+Usually **FAT32** or **NTFS** is fine (Rufus sets it automatically).<br>
+Leave cluster size to default. <br><br>
+
+<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Step 5:</b> Start the Process. <br><br>
+
+*optional: you can select what you want to bypass.* <br><br>
+
+After the Process Completed, Eject your Flash Drive.
