@@ -1,26 +1,55 @@
-# How to Make Bootable Storage for OS Installation with Bypass Feature
+# 🔧 How to Make a Bootable USB with OS Installation + Bypass Feature
 
-*before we start make sure you have stable internet connection*
+>  **Before you start:** Make sure you have a **stable internet connection**.
 
-Requirements:
-1. Flash Drive (8GB Recommended, bawal ung fake na nabibili na tig 300 sa shopee neh sasabog yan.) <br><br>
-2. ISO File (the OS copy.)
-<br><br>
-**Step 1:** Click the link <a href="https://github.com/pbatard/rufus/releases/download/v4.7/rufus-4.7.exe">here</a> to download the file. <br><br>
-**Step 2:** Insert the flash drive to your PC/Laptop <br><br>
-**Step 3:** Open rufus.exe <br><br>
-**Step 4:** Click "SELECT" and Load the ISO File. <br><br>
+---
 
-**Partition scheme & Target System:**<br>
-**MBR** for legacy BIOS <br>
-**GPT** for UEFI systems <br>
-**Target system** will auto-adjust, but you can change it based on your system.<br><br>
-**File System & Cluster Size:**<br>
-Usually **FAT32** or **NTFS** is fine (Rufus sets it automatically).<br>
-Leave cluster size to default. <br><br>
+###  Requirements:
 
-<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Step 5:</b> Start the Process. <br><br>
+1. **Flash Drive** – At least **8GB recommended**  
+   _(Avoid cheap fake ones from Shopee for ₱300 — ingat kanalang)_
 
-*optional: you can select what you want to bypass.* <br><br>
+2. **ISO File** – Your OS installer in `.iso` format
 
-After the Process Completed, Eject your Flash Drive.
+---
+
+### 🛠️ Step-by-Step Guide:
+
+#### **Step 1:**  
+[Download Rufus 4.7](https://github.com/pbatard/rufus/releases/download/v4.7/rufus-4.7.exe)
+
+#### **Step 2:**  
+Insert your flash drive into your PC or laptop.
+
+#### **Step 3:**  
+Open `rufus.exe`
+
+#### **Step 4:**  
+Click **"SELECT"** and load your **ISO file**
+
+---
+
+### 🔧 Rufus Settings
+
+#### **Partition Scheme & Target System**  
+- **MBR** → for **Legacy BIOS**  
+- **GPT** → for **UEFI systems**  
+_**(Rufus auto-detects this, but you can change it manually if needed)**_
+
+#### **File System & Cluster Size**  
+- File System: **FAT32** or **NTFS** (Rufus chooses best option)  
+- Cluster Size: Leave at **Default**
+
+---
+
+#### **Step 5:**  
+Click **Start** to begin the bootable creation process.
+
+>  *Optional: You can choose what bypass options you'd like (e.g., TPM, Secure Boot, RAM, etc.)*
+
+---
+
+###  After it's Done:
+- Wait for the process to complete.
+- Safely **eject your flash drive**.
+- You're good to go!
